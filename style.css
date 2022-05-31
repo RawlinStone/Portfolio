@@ -17,38 +17,65 @@
     color: rgb(131, 0, 0);
 }
 
+.image {
+text-align: center;
+}
+
 .center {
 
-    display: block;
+    display: run-in;
     margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
+
 .center.border{
     margin: auto;
     border: 3px solid green;
-    padding: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-body{
-    background-image: url("images/skybox-front.png");
+body {
+    background: linear-gradient(-45deg, #0064a4, #4CA9DF, #ffd200, #4CA9DF, #0064a4);
+    background-size: 300% 300%;
+    animation: gradient 20s ease infinite;
 }
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 p span{
     display: table; 
     margin: 0px auto 0px auto; 
-    padding:5px;font-size:20px;
-    background-color: white;
+    font-size:20px;
     color:black;
     text-align: center;
+    background-color: #e5e5e5;
+    border-color: #a3a3a3;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px; 
+    border-radius: 1vmin; 
+    background: #e5e5e5;
 }
 
 .misc, .head{
     text-align:center;
 }
-
-
 
 
 /* The following is for the header */
